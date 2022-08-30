@@ -1,0 +1,20 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: core
+
+resilience4j:
+  retry:
+    instances:
+      default:
+        max-attempts: 5
+        waitDuration: 100
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
