@@ -20,6 +20,7 @@ public class StageService extends ServiceComponent {
         currentStage.setAction(context.getAction());
         currentStage.setDynamicResponse(context.getLastInput());
 
+        currentStage.environment(currentStage.getLookAround());
         currentStage.execute();
 
         StageInterface nextStage = currentStage.getNextStage();

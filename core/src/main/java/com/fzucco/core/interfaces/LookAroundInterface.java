@@ -9,5 +9,5 @@ public interface LookAroundInterface {
     @JsonIgnore
     List<LookAroundItemInterface> getLookAround();
 
-    void setLookAround(LookAroundItemInterface... lookAround);
+    void environment(List<LookAroundItemInterface> lookAround);
 }

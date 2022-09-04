@@ -1,32 +1,33 @@
 package com.fzucco.core.model.bag.bag_items;
 
 import com.fzucco.core.enums.Actions;
+import com.fzucco.core.enums.CastEnum;
 import com.fzucco.core.interfaces.LookAroundItemInterface;
-import com.fzucco.core.interfaces.actions_interfaces.GrabbableItemInterface;
+import com.fzucco.core.interfaces.actions_interfaces.ReadableItemInterface;
 import com.fzucco.core.utils.ActionMap;
 import lombok.AllArgsConstructor;
 
 import java.util.Map;
 
 @AllArgsConstructor
-public class Money extends BagItem implements LookAroundItemInterface, GrabbableItemInterface {
+public class Letter$4 extends BagItem implements LookAroundItemInterface, ReadableItemInterface {
 
-    public Money(Double quantity) {
+    public Letter$4(Double quantity) {
         super(quantity);
     }
 
     @Override
     public String getName() {
-        return "Money";
+        return "Letter from " + CastEnum.ANONYMOUS.getName();
     }
 
     @Override
     public Map<Actions, String> getInteraction() {
-        return ActionMap.builder()._put(Actions.GRAB);
+        return ActionMap.builder()._put(Actions.READ);
     }
 
     @Override
     public String getDescription() {
-        return "Money used to buy thing";
+        return "Letter gived to you by that stranger man.";
     }
 }

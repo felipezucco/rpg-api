@@ -11,7 +11,7 @@ import java.util.Locale;
 import java.util.Map;
 
 @Stage
-public class StartLore$5 extends StageComponent {
+public class StartLore$3 extends StageComponent {
 
     @Override
     public Map<CastEnum, String> getStoryTeller() {
@@ -33,7 +33,7 @@ public class StartLore$5 extends StageComponent {
     public void execute() throws Exception {
         Actions action = getActions();
         if (action == Actions.GO) {
-            callNextStage(KnowAboutHim$6.class);
+            callNextStage(KnowAboutHim$4.class);
             return;
         }
 

@@ -4,9 +4,11 @@ import com.fzucco.core.interfaces.CastInterface;
 
 public enum CastEnum implements CastInterface {
 
-    ANONYMOUS("Anonymous Person");
+    LORE("Lore"),
+    ANONYMOUS("Anonymous Person"),
+    NURSE("Nurse");
 
-    private String name;
+    private final String name;
 
     CastEnum(String name) {
         this.name = name;

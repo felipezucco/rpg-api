@@ -8,7 +8,7 @@ public interface BagInterface extends ContextInterface {
 
     @JsonProperty("Bag")
     default Bag getBag() {
-        return getContext().getBag();
+        return getContext().getProfile().getBag();
     }
 
 }

@@ -7,6 +7,7 @@ import com.fzucco.core.interfaces.LookAroundItemInterface;
 import com.fzucco.core.interfaces.StageInterface;
 import org.springframework.stereotype.Component;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
@@ -51,6 +52,9 @@ public abstract class StageComponent extends ContextComponent implements StageIn
 
     @Override
     public List<LookAroundItemInterface> getLookAround() {
+        if (this.lookAround == null) {
+            this.lookAround = new ArrayList<>();
+        }
         return this.lookAround;
     }
 
@@ -66,7 +70,7 @@ public abstract class StageComponent extends ContextComponent implements StageIn
         return nextStage;
     }
 
-    public void setLookAround(LookAroundItemInterface... lookAround) {
-        this.lookAround = List.of(lookAround);
+    @Override
+    public void environment(List<LookAroundItemInterface> lookAround) {
     }
 }

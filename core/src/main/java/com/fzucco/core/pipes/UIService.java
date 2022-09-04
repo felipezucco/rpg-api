@@ -1,10 +1,10 @@
 package com.fzucco.core.pipes;
 
 import com.fzucco.core.context.Context;
-import com.fzucco.core.context.ShowAround;
-import com.fzucco.core.context.ShowBag;
-import com.fzucco.core.context.ShowMap;
 import com.fzucco.core.interfaces.RPGInterface;
+import com.fzucco.core.rpg_interfaces.ShowAround;
+import com.fzucco.core.rpg_interfaces.ShowBag;
+import com.fzucco.core.rpg_interfaces.ShowMap;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.web.context.annotation.RequestScope;
@@ -25,8 +25,7 @@ public class UIService extends ServiceComponent {
         RPGInterface rpgInterface = controlAction(context);
 
         if (rpgInterface != null) {
-            setRender(rpgInterface);
-            setTruncate(true);
+            renderAndTruncate(rpgInterface);
         }
     }
 

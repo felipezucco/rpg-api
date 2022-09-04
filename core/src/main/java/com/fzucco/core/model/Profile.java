@@ -1,6 +1,7 @@
 package com.fzucco.core.model;
 
-import lombok.Builder;
+import com.fzucco.core.interfaces.actions_interfaces.WearingItemInterface;
+import com.fzucco.core.model.bag.Bag;
 import lombok.Data;
 
 
@@ -8,5 +9,7 @@ import lombok.Data;
 public class Profile {
 
     private String name;
+    private Bag bag;
+    private WearingItemInterface wearing;
 
 }

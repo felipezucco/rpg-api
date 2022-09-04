@@ -16,4 +16,6 @@ public interface ServiceInterface {
     void setRender(RPGInterface rpgInterface);
 
     RPGInterface getRender();
+
+    void renderAndTruncate(RPGInterface rpgInterface);
 }

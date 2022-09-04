@@ -1,4 +1,4 @@
-package com.fzucco.core.context;
+package com.fzucco.core.rpg_interfaces;
 
 import com.fzucco.core.interfaces.BagInterface;
 import com.fzucco.core.interfaces.RPGInterface;

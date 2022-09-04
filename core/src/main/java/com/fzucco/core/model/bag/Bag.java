@@ -43,6 +43,13 @@ public class Bag implements Set<BagItem> {
 
     @Override
     public boolean add(BagItem bagItem) {
+        for (BagItem item : map) {
+            if (item.getName().equals(bagItem.getName())) {
+                Double currentQuantity = item.getQuantity();
+                item.setQuantity(currentQuantity + bagItem.getQuantity());
+                return true;
+            }
+        }
         return map.add(bagItem);
     }
 

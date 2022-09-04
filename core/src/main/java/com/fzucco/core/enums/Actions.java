@@ -8,6 +8,9 @@ public enum Actions {
     MAP("m", "Type MAP (m) to open the map."),
 
     GRAB("gb", "Type GRAB (gb) to collect the item."),
+    DRIVE("dv", "Type DRIVE (dv) to drive it."),
+    READ("rd", "Type READ (rd) to read it."),
+    TAKE("tk", "Type TAKE (tk) to take it."),
 
     BACK("<", "Type BACK (<) to get back."),
     GO(">", "Type GO (>) to go forward."),

@@ -37,7 +37,7 @@ public class RepeatName$2 extends StageComponent {
         }
 
         if (actions == Actions.YES) {
-            callNextStage(KnowAboutHim$6.class);
+            callNextStage(StartLore$3.class);
             return;
         }
 

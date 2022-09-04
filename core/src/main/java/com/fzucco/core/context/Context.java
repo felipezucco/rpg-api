@@ -4,7 +4,6 @@ import com.fzucco.core.enums.Actions;
 import com.fzucco.core.interfaces.RPGInterface;
 import com.fzucco.core.model.Profile;
 import com.fzucco.core.model.WorldMap;
-import com.fzucco.core.model.bag.Bag;
 import lombok.Data;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.config.ConfigurableBeanFactory;
@@ -18,8 +17,6 @@ public class Context {
 
     @Autowired
     private Profile profile;
-    @Autowired
-    private Bag bag;
     @Autowired
     private WorldMap map;
 

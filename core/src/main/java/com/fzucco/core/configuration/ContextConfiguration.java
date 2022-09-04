@@ -32,18 +32,15 @@ public class ContextConfiguration {
     }
 
     @Bean
-    public Bag getBag() {
+    public Profile getProfile() {
+        Profile profile = new Profile();
         Bag bag = new Bag();
         Money money = new Money();
         money.setQuantity(50d);
         bag.add(money);
 
-        return bag;
-    }
-
-    @Bean
-    public Profile getProfile() {
-        return new Profile();
+        profile.setBag(bag);
+        return profile;
     }
 
 

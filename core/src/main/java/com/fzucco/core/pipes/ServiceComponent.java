@@ -26,4 +26,10 @@ public abstract class ServiceComponent implements ServiceInterface {
     public RPGInterface getRender() {
         return this.render;
     }
+
+    @Override
+    public void renderAndTruncate(RPGInterface rpgInterface) {
+        this.render = rpgInterface;
+        this.truncate = true;
+    }
 }

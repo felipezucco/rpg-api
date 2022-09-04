@@ -1,4 +1,4 @@
-package com.fzucco.core.interfaces;
+package com.fzucco.core.interfaces.actions_interfaces;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -10,6 +10,6 @@ public interface InteractionInterface {
 
     @JsonProperty("Actions")
     @JsonInclude(JsonInclude.Include.NON_EMPTY)
-    Map<Actions,String> getInteraction();
+    Map<Actions, String> getInteraction();
 
 }
